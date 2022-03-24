@@ -1,0 +1,1 @@
+grep -E '^.+88' passwd.fake | awk -F":" '{print $5}'

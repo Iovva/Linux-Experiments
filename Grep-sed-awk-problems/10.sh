@@ -1,0 +1,1 @@
+sed -r 's/[^r]//g' passwd.fake | sort | uniq

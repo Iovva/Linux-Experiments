@@ -1,0 +1,1 @@
+awk -f awk11.awk ps.fake

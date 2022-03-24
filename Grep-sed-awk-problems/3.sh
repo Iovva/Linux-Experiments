@@ -1,0 +1,1 @@
+awk -F":" -f awk3.awk passwd.fake
