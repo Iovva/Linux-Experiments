@@ -1,0 +1,17 @@
+Scrieti un program c care primeste ca argumente in linia de comanda oricate
+perechi formate dintr-un fisier si un numar. Pentru fiecare pereche
+programul va crea cate un thread, fiecare thread va primi ca si argumente
+cate o pereche. Programul va retine intr-un vector alocat dinamic numarul de
+litere mari din fiecare fisier, vectorul va fi populat de catre thread-uri, 
+fiecare thread va stoca pe o pozitie din vector numarul de litere mari din 
+fisierul primit ca argument. Thread-uri vor contoriza intr-o variabila
+blobala cifrele aflate in primele n caractere ale fisierului (n fiind numarul
+primit ca si argument de catre thread).
+Executia thread-urilor trebuie sa se desfasoare in paralel.
+Accesul la variabilele globale trebuie sincronizat in cel mai eficient mod
+posiibl.
+Programul trebuie compilat folosind utilitarul gcc cu optiunile -Wall si -g
+fara a rezulta nici un avertisment sau eroare de sintaxa.
+Programul trebuie sa ruleze fara memory leak sau erori de context.
+Se vor face toate validarile necesare.
+In cazul alocarilor dinamice nu se va aloca mai mult spatiu decat este necesar.

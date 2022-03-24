@@ -1,0 +1,11 @@
+1) grep -E Sun last.fake | grep -E economica | sed -r 's/ pts.+//g' | sort | uniq
+2) sed -r 's/ pts.+\s\s[0-9]\s/ /g' last.fake | sed -r 's/:.+//g' | grep -E ' 2[34]'| sed -r 's/ .+//g' | sort | uniq
+3) awk -F":" -f awk3.awk passwd.fake
+4) grep -E '^root' ps.fake | awk '{print $6}' | sort | uniq
+5) grep -E '^.+88' passwd.fake | awk -F":" '{print $5}'
+6) awk -F":" '{if($3 ~ "23[0-9]")print $5}' passwd.fake
+7) awk '{if($1 ~ "^t" && $2 ~ "pts/9")print $1}' last.fake | sort | uniq
+8) cat ps.fake | awk '{if($1 ~ "^r")print $1}' | sort | uniq | sed -r 's/[aeiou]/&&/g'
+9) sed -r 's/[A-Za-z0-9 ]//g' passwd.fake | sort | uniq
+10) sed -r 's/[^r]//g' passwd.fake | sort | uniq
+11) awk -f awk11.awk ps.fake
